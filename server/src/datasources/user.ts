@@ -2,7 +2,7 @@ import { DataSource, DataSourceConfig } from 'apollo-datasource';
 import * as isEmail from 'isemail';
 import { IDs, ID } from '../model';
 
-export class UserAPI extends DataSource {
+export default class UserAPI extends DataSource {
 
   private store: any;
   private context: any;

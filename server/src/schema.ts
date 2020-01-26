@@ -1,6 +1,6 @@
 import { gql } from 'apollo-server';
 
-export const typeDefs = gql`
+const typeDefs = gql`
   type Query {
     launches(
       """
@@ -66,3 +66,5 @@ export const typeDefs = gql`
     LARGE
   }
 `;
+
+export default typeDefs;

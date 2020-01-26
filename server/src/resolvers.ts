@@ -2,7 +2,7 @@ import { IResolvers } from 'apollo-server';
 import { paginateResults } from './utils';
 import { ID } from './model';
 
-export const resolvers: IResolvers = {
+const resolvers: IResolvers = {
     Query: {
       launches: async (_, { pageSize = 20, after }, { dataSources }) => {
         const allLaunches = await dataSources.launchAPI.getAllLaunches();
@@ -95,3 +95,5 @@ export const resolvers: IResolvers = {
       },
     },
   };
+
+export default resolvers;

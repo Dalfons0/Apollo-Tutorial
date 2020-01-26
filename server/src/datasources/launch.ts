@@ -1,7 +1,7 @@
 import { RESTDataSource } from 'apollo-datasource-rest';
 import { ID, IDs } from '../model';
 
-export class LaunchAPI extends RESTDataSource {
+export default class LaunchAPI extends RESTDataSource {
   constructor() {
     super();
     this.baseURL = 'https://api.spacexdata.com/v2/';
